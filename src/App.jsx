@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AdminDashboard from "./pages/AdminDashboard";
-import ProtectedRoute from "./components/ProtectedRoute"; // Import ini
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
-    <Router>
+    // Tambahkan basename sesuai nama repositori GitHub Anda
+    <Router basename="/mapping-mbg-bandung">
       <Routes>
         <Route path="/" element={<Home />} />
         

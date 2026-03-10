@@ -1,16 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Gunakan HashRouter
 import Home from "./pages/Home";
 import AdminDashboard from "./pages/AdminDashboard";
-import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
-    // Tambahkan basename sesuai nama repositori GitHub Anda
-    <Router basename="/mapping-mbg-bandung">
+    // HashRouter tidak memerlukan basename secara eksplisit seperti BrowserRouter
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        
-        {/* Rute Admin sekarang diproteksi */}
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </Router>

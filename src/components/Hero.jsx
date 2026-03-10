@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="md:w-1/2 relative group">
         <div className="absolute -inset-4 bg-gold-accent/10 blur-2xl rounded-full group-hover:bg-gold-accent/20 transition-all duration-700"></div>
         <div className="relative rounded-2xl overflow-hidden frame-border p-4">
-          <img alt="Representasi Keadilan dan Ketahanan" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 opacity-60 hover:opacity-100" src={'${import.meta.env.BASE_URL}'} />
+          <img alt="Representasi Keadilan dan Ketahanan" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 opacity-60 hover:opacity-100" src='https://cdn.setneg.go.id/_multimedia/photo/20250219/2521IMG-20250219-WA0014.jpg' />
         </div>
       </div>
     </section>

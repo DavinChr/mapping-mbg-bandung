@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="w-8 h-8 border border-gold-accent rounded-full flex items-center justify-center text-[10px] text-gold-accent">MBG</div>
           <span className="font-playfair text-xl tracking-wider">MBG BANDUNG</span>
         </div>
-        <p className="text-sm text-light-grey/40">© 2024 Dinas Ketahanan Pangan dan Pertanian Kota Bandung.</p>
+        <p className="text-sm text-light-grey/40">© 2026 Kelompok PRODS MBG - IF UNPAR.</p>
       </div>
       <div className="flex space-x-8 text-xs font-semibold tracking-widest text-light-grey/60 uppercase">
         <a className="hover:text-gold-accent" href="#">Privacy</a>

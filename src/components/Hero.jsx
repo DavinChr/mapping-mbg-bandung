@@ -2,8 +2,8 @@ export default function Hero() {
   return (
     <section className="max-w-7xl mx-auto min-h-[70vh] flex flex-col md:flex-row items-center justify-between gap-12 py-12" id="home">
       <div className="md:w-1/2 space-y-6">
-        <h1 className="font-playfair text-5xl md:text-7xl leading-tight">
-          MBG <span className="text-gold-accent italic block">Kota Bandung</span>
+        <h1 className="font-playfair text-5xl md:text-7xl leading-tight text-white">
+          MBG <span className="text-gold-accent italic block mt-2">Kota Bandung</span>
         </h1>
         <div className="w-24 h-1 bg-gold-accent"></div>
         <p className="text-lg text-light-grey/80 font-light leading-relaxed max-w-lg">

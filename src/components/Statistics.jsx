@@ -41,7 +41,7 @@ export default function Statistics() {
             </svg>
           </div>
           <h3 className="text-4xl font-playfair text-white">74.4</h3>
-          <p className="text-xs uppercase tracking-widest text-gold-accent">Indeks Ketahanan</p>
+          <p className="text-xs uppercase tracking-widest text-gold-accent">Indeks Ketahanan Pangan</p>
         </div>
       </div>
     </section>

@@ -143,17 +143,20 @@ export default function MapSection() {
               id="pts-layer"
               type="circle"
               paint={{
-                'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 2.5, 15, 8],
+                'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 2.2, 15, 8],
                 'circle-color': [
                   'match', ['get', 'category'],
-                  'SD', '#3B82F6',        // Biru untuk SD
-                  'SMP', '#6366F1',       // Indigo untuk SMP
-                  'SMA', '#FF4B2B',
-                  'SPPG', '#D4AF37',      // Emas untuk SPPG
-                  'Buruan Sae', '#00FF7F',
-                  'PAUD', '#EC4899',
-                  'TK', '#06B6D4',
-                  '#FFFFFF'
+                  'SD', '#3B82F6',        // Biru
+                  'SMP', '#6366F1',       // Indigo
+                  'SMA', '#FF4B2B',       // Merah
+                  'SMK', '#F97316',       // Oranye
+                  'MA', '#A855F7',        // Ungu untuk MA
+                  'SPPG', '#D4AF37',      // Emas
+                  'Buruan Sae', '#00FF7F',// Hijau
+                  'PAUD', '#EC4899',      // Pink
+                  'TK', '#06B6D4',        // Cyan
+                  'KB', '#EAB308',        // Kuning untuk KB
+                  '#FFFFFF'               // Default
                 ],
                 'circle-stroke-width': 1.5,
                 'circle-stroke-color': '#0B1221',
@@ -189,11 +192,20 @@ export default function MapSection() {
             <div className={`w-3 h-3 rounded-md ${selectedFilters.includes('FSVA') ? 'bg-[#0B1221]' : 'bg-white/10'}`}></div>
           </button>
 
+          {/* Filter Pendidikan */}
           <div>
             <p className="text-[8px] text-white/20 font-black uppercase mb-3 ml-1 tracking-[0.2em]">Pendidikan</p>
             <div className="grid grid-cols-2 gap-2">
-              {['SD', 'SMP', 'SMA', 'SMK', 'PAUD', 'TK'].map(cat => (
-                <button key={cat} onClick={() => toggleFilter(cat)} className={`p-2 rounded-xl border text-[9px] font-black transition-all ${selectedFilters.includes(cat) ? 'bg-white/10 border-[#D4AF37]/50 text-white' : 'bg-white/5 border-white/5 text-white/30'}`}>
+              {/* ARRAY LENGKAP: MA dan KB sudah kembali masuk! */}
+              {['SD', 'SMP', 'SMA', 'SMK', 'MA', 'PAUD', 'TK', 'KB'].map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => toggleFilter(cat)}
+                  className={`p-2 rounded-xl border text-[9px] font-black transition-all ${selectedFilters.includes(cat)
+                    ? 'bg-white/10 border-[#D4AF37]/50 text-white'
+                    : 'bg-white/5 border-white/5 text-white/30'
+                    }`}
+                >
                   {cat}
                 </button>
               ))}

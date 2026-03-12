@@ -22,7 +22,7 @@ export default function Home() {
 
         <section id="mapping" className="py-8 px-2 md:px-6 lg:px-10">
           {/* BINGKAI GLASSMORPHISM */}
-          <div className="w-full max-w-[1600px] mx-auto h-[800px] rounded-[3rem] glass-card shadow-2xl p-3 md:p-5">
+          <div className="w-full max-w-[1600px] mx-auto h-[850px] rounded-[3rem] glass-card shadow-2xl p-3 md:p-5">
             {/* PETA DI DALAM BINGKAI */}
             <div className="w-full h-full rounded-[2rem] overflow-hidden relative">
               <MapSection />

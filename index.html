@@ -1,16 +1,61 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBG Bandung</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      theme: { extend: { colors: { 'navy-dark': '#0B1221', 'gold-accent': '#D4AF37', 'light-grey': '#E5E7EB' } } }
+      theme: {
+        extend: {
+          colors: {
+            'navy-dark': '#0B1221',
+            'gold-accent': '#D4AF37',
+            'light-grey': '#E5E7EB',
+          }
+        }
+      }
     }
   </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0B1221;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* EFEK KACA NUKLIR */
+    .glass-header {
+      background-color: rgba(11, 18, 33, 0.3) !important;
+      -webkit-backdrop-filter: blur(40px) saturate(180%) !important;
+      backdrop-filter: blur(40px) saturate(180%) !important;
+    }
+
+    /* ORNAMEN BACKGROUND (Agar tidak merusak ukuran body) */
+    .ornament-bg {
+      position: fixed;
+      bottom: -50px;
+      left: -50px;
+      width: 400px;
+      height: 400px;
+      background: url('https://www.transparenttextures.com/patterns/pinstripe.png');
+      opacity: 0.05;
+      z-index: -1;
+      transform: rotate(45deg);
+      pointer-events: none;
+    }
+  </style>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>
